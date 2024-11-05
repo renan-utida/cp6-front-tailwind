@@ -3,7 +3,7 @@ import LogoImg from './../assets/logo.png'
 export default function Nav(){
 
     return(
-        <header className='w-100 h-32 bg-black flex flex-row justify-between px-6 border-b-4 border-b-yellow-500'>  
+        <header className='w-full h-32 bg-black flex flex-row justify-between px-6 border-b-4 border-b-yellow-500'>  
             <a href="#" className='flex items-center'>
                 <img className='w-44 h-24' src={LogoImg} alt="Logo Renan's Sports Outlet" />
             </a>
