@@ -11,7 +11,7 @@ export default function Carrossel(){
     const slides = [slide1, slide2, slide3, slide4]
     
     return(
-        <section className="w-[90%] mx-auto py-12">
+        <section id="promocoes" className="w-[90%] mx-auto py-12">
             <SlidesCarrossel className="w-100 h-80" slides={slides}/>
         </section>
     )
