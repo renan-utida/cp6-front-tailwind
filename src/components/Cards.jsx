@@ -69,7 +69,7 @@ export default function Cards(){
                 <h3 className="mx-auto mt-10 text-4xl font-bold text-yellow-500 mb-4">Bolas Esportivas</h3>
                 <div className="flex flex-row justify-evenly px-8 py-6">
                     <div className="flex flex-col px-3 py-4 border-2 rounded-lg max-w-72  border-yellow-400 bg-black text-white">
-                        <div className="mx-auto mt-1 w-64 h-96 bg-slate-600">
+                        <div className="mx-auto mt-1 w-64 h-72 bg-slate-600">
                             <img className="w-100 h-100" src={Bola1} alt="Bola Futebol - Euro"/>
                         </div>
                         <h4 className="mt-4 text-2xl text-center font-bold">Bola Futebol - Euro 2024</h4>
@@ -79,7 +79,7 @@ export default function Cards(){
                         <button className="border-2 px-4 py-2 mb-2 rounded-xl bg-yellow-500 font-bold text-black flex mx-auto hover:bg-yellow-600 transition ease-linear delay-75">Comprar</button>
                     </div>
                     <div className="flex flex-col px-3 py-4 border-2 rounded-lg max-w-72  border-yellow-400 bg-black text-white">
-                        <div className="mx-auto mt-1 w-64 h-96 bg-slate-600">
+                        <div className="mx-auto mt-1 w-64 h-72 bg-slate-600">
                             <img className="w-100 h-100" src={Bola2} alt="Bola Copa 2022"/>
                         </div>
                         <h4 className="mt-4 text-2xl text-center font-bold">Bola Futebol - Copa 2022</h4>
@@ -89,7 +89,7 @@ export default function Cards(){
                         <button className="border-2 px-4 py-2 mb-2 rounded-xl bg-yellow-500 font-bold text-black flex mx-auto hover:bg-yellow-600 transition ease-linear delay-75">Comprar</button>
                     </div>
                     <div className="flex flex-col px-3 py-4 border-2 rounded-lg max-w-72  border-yellow-400 bg-black text-white">
-                        <div className="mx-auto mt-1 w-64 h-96 bg-slate-600">
+                        <div className="mx-auto mt-1 w-64 h-72 bg-slate-600">
                             <img className="w-100 h-auto pb-8" src={Bola3} alt="Camiseta de Time - Barcelona"/>
                         </div>
                         <h4 className="mt-4 text-2xl text-center font-bold">Bola Basquete - NBA 2024/25</h4>
@@ -99,7 +99,7 @@ export default function Cards(){
                         <button className="border-2 px-4 py-2 mb-2 rounded-xl bg-yellow-500 font-bold text-black flex mx-auto hover:bg-yellow-600 transition ease-linear delay-75">Comprar</button>
                     </div>
                     <div className="flex flex-col px-3 py-4 border-2 rounded-lg max-w-72  border-yellow-400 bg-black text-white">
-                        <div className="mx-auto mt-1 w-64 h-96 bg-slate-600">
+                        <div className="mx-auto mt-1 w-64 h-72 bg-slate-600">
                             <img className="w-100 h-100" src={Bola4} alt="Camiseta de Time - Real Madrid"/>
                         </div>
                         <h4 className="mt-4 text-2xl text-center font-bold">Bola Volei - Mikasa 2024</h4>
