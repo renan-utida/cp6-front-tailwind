@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { FaArrowCircleRight } from "react-icons/fa";
 import { FaArrowCircleLeft } from "react-icons/fa";
@@ -23,16 +23,28 @@ export default function SlidesCarrossel({slides}){
         }
     };  
 
+    // Mudar o slide automaticamente a cada 5 segundos
+    useEffect(() => {
+        const interval = setInterval(() => {
+            nextSlide(); // Avança para o próximo slide
+        }, 5000); // A cada 5 segundos
+
+        // Limpar o intervalo quando o componente for desmontado
+        return () => clearInterval(interval);
+    }, [currentSlide]); // Esse efeito depende do currentSlide
+
+
     return(
         <section className="overflow-hidden relative">
             <div 
                 className={`flex transition ease-out duration-40`}
                 style={{
                     transform: `translateX(-${currentSlide * 100}%)`,
-                }}>
-            {slides.map((s)=>{
-                return <img src={s} alt="Slides Produtos" />
-            })}
+                }}
+            >
+                {slides.map((s, i)=>{
+                    return <img key={i} src={s} alt={`Slide ${i}`} />;
+                })}
             </div>
 
             <div className="absolute top-0 h-full w-full justify-between items-center flex text-yellow-500 px-5 text-3xl">
@@ -45,7 +57,7 @@ export default function SlidesCarrossel({slides}){
             </div>
 
             <div className="absolute bottom-0 py-4 flex justify-center gap-3 w-full ">
-                {slides.map((s, i)=>{
+                {slides.map((_, i)=>{
                     return (
                         <div 
                             onClick={()=>{
